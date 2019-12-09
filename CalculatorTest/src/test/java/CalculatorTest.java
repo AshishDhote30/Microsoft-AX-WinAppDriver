@@ -31,7 +31,7 @@ public class CalculatorTest {
         try {
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setCapability("app", "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App");
-            CalculatorSession = new WindowsDriver(new URL("http://127.0.0.1:4723"), capabilities);
+            CalculatorSession = new WindowsDriver(new URL("http://127.0.0.1:49208"), capabilities);
             CalculatorSession.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 
             CalculatorResult = CalculatorSession.findElementByAccessibilityId("CalculatorResults");
